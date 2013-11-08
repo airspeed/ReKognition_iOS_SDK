@@ -33,21 +33,6 @@ const float MERGED_IMAGE_MAX_WIDTH = 800.0;
 }
 
 
-- (UIImageOrientation)UIImageOrientationForCGImageOrienation:(NSUInteger)orientation {
-    switch (orientation) {
-        case 1: return UIImageOrientationUp;
-        case 2: return UIImageOrientationUpMirrored;
-        case 3: return UIImageOrientationDown;
-        case 4: return UIImageOrientationDownMirrored;
-        case 5: return UIImageOrientationLeftMirrored;
-        case 6: return UIImageOrientationRight;
-        case 7: return UIImageOrientationRightMirrored;
-        case 8: return UIImageOrientationLeft;
-    }
-    return UIImageOrientationUp;
-}
-
-
 - (UIImage *)cropFaceThumbnailsInCIImage:(CIImage *)ciImage {
     CGFloat rawImageWidth = ciImage.extent.size.width;
     CGFloat rawImageHeight = ciImage.extent.size.height;
