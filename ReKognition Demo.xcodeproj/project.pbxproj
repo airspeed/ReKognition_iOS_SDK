@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		083E9C7A18223D4A00E1154D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083E9C7918223D4A00E1154D /* ImageIO.framework */; };
-		083E9C7C1824614A00E1154D /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 083E9C7B1824614A00E1154D /* test.jpg */; };
-		08A04691182C4DE100628413 /* FaceThumbnailCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A0468C182C4DE100628413 /* FaceThumbnailCropper.m */; };
-		08A04692182C4DE100628413 /* ReKognitionResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A0468E182C4DE100628413 /* ReKognitionResults.m */; };
-		08A04693182C4DE100628413 /* RekognitionSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A04690182C4DE100628413 /* RekognitionSDK.m */; };
-		08A04699182C649E00628413 /* UIImageRotationFixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A04698182C649E00628413 /* UIImageRotationFixer.m */; };
+		08831461182DD2490010002C /* FaceThumbnailCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0883145A182DD2490010002C /* FaceThumbnailCropper.m */; };
+		08831462182DD2490010002C /* ReKognitionResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 0883145C182DD2490010002C /* ReKognitionResults.m */; };
+		08831463182DD2490010002C /* RekognitionSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 0883145E182DD2490010002C /* RekognitionSDK.m */; };
+		08831464182DD2490010002C /* UIImageRotationFixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08831460182DD2490010002C /* UIImageRotationFixer.m */; };
 		08A4ED311813D3EC003F6F66 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A4ED301813D3EC003F6F66 /* CoreImage.framework */; };
 		08A4ED331813D407003F6F66 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A4ED321813D407003F6F66 /* AssetsLibrary.framework */; };
-		A503FC8917A06013002C6221 /* empty_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = A503FC8617A06013002C6221 /* empty_pic.png */; };
+		08CC2A26182DD5760026819F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC2A23182DD5760026819F /* AppDelegate.m */; };
+		08CC2A27182DD5760026819F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC2A25182DD5760026819F /* ViewController.m */; };
+		08CC2A29182DD5890026819F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC2A28182DD5890026819F /* main.m */; };
+		08CC2A2B182DD70C0026819F /* empty_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 08CC2A2A182DD70C0026819F /* empty_pic.png */; };
 		A503FC8A17A06013002C6221 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A503FC8717A06013002C6221 /* icon.png */; };
 		A503FC8B17A06013002C6221 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A503FC8817A06013002C6221 /* icon@2x.png */; };
 		A5484A74179FBD1B0056E2E1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5484A73179FBD1B0056E2E1 /* QuartzCore.framework */; };
@@ -25,9 +27,6 @@
 		A55CB61B1799028B0089C0CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A55CB6191799028B0089C0CD /* InfoPlist.strings */; };
 		A55CB62A1799028B0089C0CD /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55CB6281799028B0089C0CD /* MainStoryboard_iPhone.storyboard */; };
 		A55CB62D1799028B0089C0CD /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55CB62B1799028B0089C0CD /* MainStoryboard_iPad.storyboard */; };
-		A59D7CD817A0557F007F4153 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59D7CD117A0557E007F4153 /* ViewController.m */; };
-		A59D7CD917A0557F007F4153 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A59D7CD417A0557F007F4153 /* AppDelegate.m */; };
-		A59D7CDA17A0557F007F4153 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A59D7CD517A0557F007F4153 /* main.m */; };
 		A59D7CE817A0560F007F4153 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A59D7CE517A0560F007F4153 /* Default-568h@2x.png */; };
 		A59D7CE917A0560F007F4153 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A59D7CE617A0560F007F4153 /* Default.png */; };
 		A59D7CEA17A0560F007F4153 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A59D7CE717A0560F007F4153 /* Default@2x.png */; };
@@ -35,38 +34,37 @@
 
 /* Begin PBXFileReference section */
 		083E9C7918223D4A00E1154D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		083E9C7B1824614A00E1154D /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = test.jpg; path = images/test.jpg; sourceTree = "<group>"; };
-		08A0468B182C4DE100628413 /* FaceThumbnailCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceThumbnailCropper.h; sourceTree = "<group>"; };
-		08A0468C182C4DE100628413 /* FaceThumbnailCropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceThumbnailCropper.m; sourceTree = "<group>"; };
-		08A0468D182C4DE100628413 /* ReKognitionResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReKognitionResults.h; sourceTree = "<group>"; };
-		08A0468E182C4DE100628413 /* ReKognitionResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReKognitionResults.m; sourceTree = "<group>"; };
-		08A0468F182C4DE100628413 /* ReKognitionSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReKognitionSDK.h; sourceTree = "<group>"; };
-		08A04690182C4DE100628413 /* RekognitionSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RekognitionSDK.m; sourceTree = "<group>"; };
-		08A04697182C649E00628413 /* UIImageRotationFixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageRotationFixer.h; sourceTree = "<group>"; };
-		08A04698182C649E00628413 /* UIImageRotationFixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageRotationFixer.m; sourceTree = "<group>"; };
+		08831459182DD2490010002C /* FaceThumbnailCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceThumbnailCropper.h; sourceTree = "<group>"; };
+		0883145A182DD2490010002C /* FaceThumbnailCropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceThumbnailCropper.m; sourceTree = "<group>"; };
+		0883145B182DD2490010002C /* ReKognitionResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReKognitionResults.h; sourceTree = "<group>"; };
+		0883145C182DD2490010002C /* ReKognitionResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReKognitionResults.m; sourceTree = "<group>"; };
+		0883145D182DD2490010002C /* ReKognitionSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReKognitionSDK.h; sourceTree = "<group>"; };
+		0883145E182DD2490010002C /* RekognitionSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RekognitionSDK.m; sourceTree = "<group>"; };
+		0883145F182DD2490010002C /* UIImageRotationFixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageRotationFixer.h; sourceTree = "<group>"; };
+		08831460182DD2490010002C /* UIImageRotationFixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageRotationFixer.m; sourceTree = "<group>"; };
 		08A4ED301813D3EC003F6F66 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		08A4ED321813D407003F6F66 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		A503FC8617A06013002C6221 /* empty_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = empty_pic.png; path = images/empty_pic.png; sourceTree = "<group>"; };
-		A503FC8717A06013002C6221 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = images/icon.png; sourceTree = "<group>"; };
-		A503FC8817A06013002C6221 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "images/icon@2x.png"; sourceTree = "<group>"; };
+		08CC2A22182DD5760026819F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		08CC2A23182DD5760026819F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		08CC2A24182DD5760026819F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		08CC2A25182DD5760026819F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		08CC2A28182DD5890026819F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08CC2A2A182DD70C0026819F /* empty_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_pic.png; sourceTree = "<group>"; };
+		A503FC8717A06013002C6221 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		A503FC8817A06013002C6221 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		A5484A73179FBD1B0056E2E1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		A55CB60D1799028B0089C0CD /* ReKo SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReKo SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55CB60D1799028B0089C0CD /* ReKognition Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReKognition Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55CB6101799028B0089C0CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A55CB6121799028B0089C0CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A55CB6141799028B0089C0CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A55CB61A1799028B0089C0CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A55CB6291799028B0089C0CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		A55CB62C1799028B0089C0CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		A59D7CD117A0557E007F4153 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = example/ViewController.m; sourceTree = "<group>"; };
-		A59D7CD217A0557F007F4153 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = example/ViewController.h; sourceTree = "<group>"; };
-		A59D7CD317A0557F007F4153 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = example/AppDelegate.h; sourceTree = "<group>"; };
-		A59D7CD417A0557F007F4153 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = example/AppDelegate.m; sourceTree = "<group>"; };
-		A59D7CD517A0557F007F4153 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = example/main.m; sourceTree = "<group>"; };
-		A59D7CE517A0560F007F4153 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "images/Default-568h@2x.png"; sourceTree = "<group>"; };
-		A59D7CE617A0560F007F4153 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = images/Default.png; sourceTree = "<group>"; };
-		A59D7CE717A0560F007F4153 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "images/Default@2x.png"; sourceTree = "<group>"; };
-		A5FE541417A059A80057DFCD /* ReKo SDK-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReKo SDK-Prefix.pch"; sourceTree = "<group>"; };
-		A5FE541517A059A80057DFCD /* ReKo SDK-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ReKo SDK-Info.plist"; sourceTree = "<group>"; };
+		A59D7CE517A0560F007F4153 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A59D7CE617A0560F007F4153 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A59D7CE717A0560F007F4153 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A5FE541417A059A80057DFCD /* ReKognition Demo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReKognition Demo-Prefix.pch"; sourceTree = "<group>"; };
+		A5FE541517A059A80057DFCD /* ReKognition Demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ReKognition Demo-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,17 +85,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08A0468A182C4DE100628413 /* SDK */ = {
+		08831458182DD2490010002C /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				08A0468B182C4DE100628413 /* FaceThumbnailCropper.h */,
-				08A0468C182C4DE100628413 /* FaceThumbnailCropper.m */,
-				08A04697182C649E00628413 /* UIImageRotationFixer.h */,
-				08A04698182C649E00628413 /* UIImageRotationFixer.m */,
-				08A0468D182C4DE100628413 /* ReKognitionResults.h */,
-				08A0468E182C4DE100628413 /* ReKognitionResults.m */,
-				08A0468F182C4DE100628413 /* ReKognitionSDK.h */,
-				08A04690182C4DE100628413 /* RekognitionSDK.m */,
+				08831459182DD2490010002C /* FaceThumbnailCropper.h */,
+				0883145A182DD2490010002C /* FaceThumbnailCropper.m */,
+				0883145B182DD2490010002C /* ReKognitionResults.h */,
+				0883145C182DD2490010002C /* ReKognitionResults.m */,
+				0883145D182DD2490010002C /* ReKognitionSDK.h */,
+				0883145E182DD2490010002C /* RekognitionSDK.m */,
+				0883145F182DD2490010002C /* UIImageRotationFixer.h */,
+				08831460182DD2490010002C /* UIImageRotationFixer.m */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -105,7 +103,8 @@
 		A55CB6041799028B0089C0CD = {
 			isa = PBXGroup;
 			children = (
-				A55CB6161799028B0089C0CD /* Example */,
+				08831458182DD2490010002C /* SDK */,
+				A55CB6161799028B0089C0CD /* ReKognition Demo */,
 				A55CB60F1799028B0089C0CD /* Frameworks */,
 				A55CB60E1799028B0089C0CD /* Products */,
 			);
@@ -114,7 +113,7 @@
 		A55CB60E1799028B0089C0CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A55CB60D1799028B0089C0CD /* ReKo SDK.app */,
+				A55CB60D1799028B0089C0CD /* ReKognition Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,54 +132,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A55CB6161799028B0089C0CD /* Example */ = {
+		A55CB6161799028B0089C0CD /* ReKognition Demo */ = {
 			isa = PBXGroup;
 			children = (
-				08A0468A182C4DE100628413 /* SDK */,
+				08CC2A22182DD5760026819F /* AppDelegate.h */,
+				08CC2A23182DD5760026819F /* AppDelegate.m */,
+				08CC2A24182DD5760026819F /* ViewController.h */,
+				08CC2A25182DD5760026819F /* ViewController.m */,
 				A55CB6281799028B0089C0CD /* MainStoryboard_iPhone.storyboard */,
 				A55CB62B1799028B0089C0CD /* MainStoryboard_iPad.storyboard */,
-				A59D7CD217A0557F007F4153 /* ViewController.h */,
-				A59D7CD117A0557E007F4153 /* ViewController.m */,
-				A59D7CD317A0557F007F4153 /* AppDelegate.h */,
-				A59D7CD417A0557F007F4153 /* AppDelegate.m */,
-				A5955BD6179B6C9500A02E01 /* Images */,
 				A55CB6171799028B0089C0CD /* Supporting Files */,
 			);
-			name = Example;
-			path = Rekognition_iOS_SDK;
+			path = "ReKognition Demo";
 			sourceTree = "<group>";
 		};
 		A55CB6171799028B0089C0CD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A5FE541417A059A80057DFCD /* ReKo SDK-Prefix.pch */,
-				A5FE541517A059A80057DFCD /* ReKo SDK-Info.plist */,
-				A55CB6191799028B0089C0CD /* InfoPlist.strings */,
-				A59D7CD517A0557F007F4153 /* main.m */,
+				08CC2A2A182DD70C0026819F /* empty_pic.png */,
+				08CC2A28182DD5890026819F /* main.m */,
+				A503FC8717A06013002C6221 /* icon.png */,
+				A503FC8817A06013002C6221 /* icon@2x.png */,
 				A59D7CE517A0560F007F4153 /* Default-568h@2x.png */,
 				A59D7CE617A0560F007F4153 /* Default.png */,
 				A59D7CE717A0560F007F4153 /* Default@2x.png */,
+				A5FE541417A059A80057DFCD /* ReKognition Demo-Prefix.pch */,
+				A5FE541517A059A80057DFCD /* ReKognition Demo-Info.plist */,
+				A55CB6191799028B0089C0CD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A5955BD6179B6C9500A02E01 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				083E9C7B1824614A00E1154D /* test.jpg */,
-				A503FC8617A06013002C6221 /* empty_pic.png */,
-				A503FC8717A06013002C6221 /* icon.png */,
-				A503FC8817A06013002C6221 /* icon@2x.png */,
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A55CB60C1799028B0089C0CD /* ReKo SDK */ = {
+		A55CB60C1799028B0089C0CD /* ReKognition Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A55CB6331799028B0089C0CD /* Build configuration list for PBXNativeTarget "ReKo SDK" */;
+			buildConfigurationList = A55CB6331799028B0089C0CD /* Build configuration list for PBXNativeTarget "ReKognition Demo" */;
 			buildPhases = (
 				A55CB6091799028B0089C0CD /* Sources */,
 				A55CB60A1799028B0089C0CD /* Frameworks */,
@@ -190,9 +178,9 @@
 			);
 			dependencies = (
 			);
-			name = "ReKo SDK";
+			name = "ReKognition Demo";
 			productName = Rekognition_iOS_SDK;
-			productReference = A55CB60D1799028B0089C0CD /* ReKo SDK.app */;
+			productReference = A55CB60D1799028B0089C0CD /* ReKognition Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +192,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Orbeus Inc.";
 			};
-			buildConfigurationList = A55CB6081799028B0089C0CD /* Build configuration list for PBXProject "ReKo SDK" */;
+			buildConfigurationList = A55CB6081799028B0089C0CD /* Build configuration list for PBXProject "ReKognition Demo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -216,7 +204,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A55CB60C1799028B0089C0CD /* ReKo SDK */,
+				A55CB60C1799028B0089C0CD /* ReKognition Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -227,13 +215,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A55CB61B1799028B0089C0CD /* InfoPlist.strings in Resources */,
-				083E9C7C1824614A00E1154D /* test.jpg in Resources */,
+				08CC2A2B182DD70C0026819F /* empty_pic.png in Resources */,
 				A55CB62A1799028B0089C0CD /* MainStoryboard_iPhone.storyboard in Resources */,
 				A55CB62D1799028B0089C0CD /* MainStoryboard_iPad.storyboard in Resources */,
 				A59D7CE817A0560F007F4153 /* Default-568h@2x.png in Resources */,
 				A59D7CE917A0560F007F4153 /* Default.png in Resources */,
 				A59D7CEA17A0560F007F4153 /* Default@2x.png in Resources */,
-				A503FC8917A06013002C6221 /* empty_pic.png in Resources */,
 				A503FC8A17A06013002C6221 /* icon.png in Resources */,
 				A503FC8B17A06013002C6221 /* icon@2x.png in Resources */,
 			);
@@ -246,13 +233,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A59D7CD817A0557F007F4153 /* ViewController.m in Sources */,
-				08A04692182C4DE100628413 /* ReKognitionResults.m in Sources */,
-				A59D7CD917A0557F007F4153 /* AppDelegate.m in Sources */,
-				A59D7CDA17A0557F007F4153 /* main.m in Sources */,
-				08A04693182C4DE100628413 /* RekognitionSDK.m in Sources */,
-				08A04691182C4DE100628413 /* FaceThumbnailCropper.m in Sources */,
-				08A04699182C649E00628413 /* UIImageRotationFixer.m in Sources */,
+				08CC2A27182DD5760026819F /* ViewController.m in Sources */,
+				08831462182DD2490010002C /* ReKognitionResults.m in Sources */,
+				08CC2A26182DD5760026819F /* AppDelegate.m in Sources */,
+				08831463182DD2490010002C /* RekognitionSDK.m in Sources */,
+				08831461182DD2490010002C /* FaceThumbnailCropper.m in Sources */,
+				08CC2A29182DD5890026819F /* main.m in Sources */,
+				08831464182DD2490010002C /* UIImageRotationFixer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,9 +335,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Rekognition_iOS_SDK/ReKo SDK-Prefix.pch";
-				INFOPLIST_FILE = "Rekognition_iOS_SDK/ReKo SDK-Info.plist";
-				PRODUCT_NAME = "ReKo SDK";
+				GCC_PREFIX_HEADER = "ReKognition Demo/ReKognition Demo-Prefix.pch";
+				INFOPLIST_FILE = "ReKognition Demo/ReKognition Demo-Info.plist";
+				PRODUCT_NAME = "ReKognition Demo";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -359,9 +346,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Rekognition_iOS_SDK/ReKo SDK-Prefix.pch";
-				INFOPLIST_FILE = "Rekognition_iOS_SDK/ReKo SDK-Info.plist";
-				PRODUCT_NAME = "ReKo SDK";
+				GCC_PREFIX_HEADER = "ReKognition Demo/ReKognition Demo-Prefix.pch";
+				INFOPLIST_FILE = "ReKognition Demo/ReKognition Demo-Info.plist";
+				PRODUCT_NAME = "ReKognition Demo";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -369,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A55CB6081799028B0089C0CD /* Build configuration list for PBXProject "ReKo SDK" */ = {
+		A55CB6081799028B0089C0CD /* Build configuration list for PBXProject "ReKognition Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A55CB6311799028B0089C0CD /* Debug */,
@@ -378,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A55CB6331799028B0089C0CD /* Build configuration list for PBXNativeTarget "ReKo SDK" */ = {
+		A55CB6331799028B0089C0CD /* Build configuration list for PBXNativeTarget "ReKognition Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A55CB6341799028B0089C0CD /* Debug */,

@@ -87,7 +87,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Rekognition_iOS_SDK/example/ViewController.m"
+            filePath = "ReKognition Demo/example/ViewController.m"
             timestampString = "405564083.999116"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -103,7 +103,7 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Rekognition_iOS_SDK/example/ViewController.m"
+            filePath = "ReKognition Demo/example/ViewController.m"
             timestampString = "405564083.999116"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -111,36 +111,6 @@
             endingLineNumber = "312"
             landmarkName = "-actionSheet:clickedButtonAtIndex:"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__51-[ViewController actionSheet:clickedButtonAtIndex:]_block_invoke178"
-                  moduleName = "ReKo SDK"
-                  urlString = "file:///Users/kuanghan/Desktop/ReKognition_iOS_SDK/Rekognition_iOS_SDK/example/ViewController.m"
-                  timestampString = "405565008.051857"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "312"
-                  endingLineNumber = "312"
-                  offsetFromSymbolStart = "198">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__51-[ViewController actionSheet:clickedButtonAtIndex:]_block_invoke_2181"
-                  moduleName = "ReKo SDK"
-                  urlString = "file:///Users/kuanghan/Desktop/ReKognition_iOS_SDK/Rekognition_iOS_SDK/example/ViewController.m"
-                  timestampString = "405565008.052334"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "312"
-                  endingLineNumber = "312"
-                  offsetFromSymbolStart = "106">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -267,7 +237,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "126"
             endingLineNumber = "126"
-            landmarkName = "-cropFaceThumbnailsInCIImage:"
+            landmarkName = "-correctFaceDetectResult:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -427,7 +397,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "127"
             endingLineNumber = "127"
-            landmarkName = "-cropFaceThumbnailsInCIImage:"
+            landmarkName = "-correctFaceDetectResult:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

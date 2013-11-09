@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A55CB60C1799028B0089C0CD"
-               BuildableName = "ReKo SDK.app"
-               BlueprintName = "ReKo SDK"
-               ReferencedContainer = "container:ReKo SDK.xcodeproj">
+               BuildableName = "ReKognition Demo.app"
+               BlueprintName = "ReKognition Demo"
+               ReferencedContainer = "container:ReKognition Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A55CB60C1799028B0089C0CD"
-            BuildableName = "ReKo SDK.app"
-            BlueprintName = "ReKo SDK"
-            ReferencedContainer = "container:ReKo SDK.xcodeproj">
+            BuildableName = "ReKognition Demo.app"
+            BlueprintName = "ReKognition Demo"
+            ReferencedContainer = "container:ReKognition Demo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A55CB60C1799028B0089C0CD"
-            BuildableName = "ReKo SDK.app"
-            BlueprintName = "ReKo SDK"
-            ReferencedContainer = "container:ReKo SDK.xcodeproj">
+            BuildableName = "ReKognition Demo.app"
+            BlueprintName = "ReKognition Demo"
+            ReferencedContainer = "container:ReKognition Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A55CB60C1799028B0089C0CD"
-            BuildableName = "ReKo SDK.app"
-            BlueprintName = "ReKo SDK"
-            ReferencedContainer = "container:ReKo SDK.xcodeproj">
+            BuildableName = "ReKognition Demo.app"
+            BlueprintName = "ReKognition Demo"
+            ReferencedContainer = "container:ReKognition Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
