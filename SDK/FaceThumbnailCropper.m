@@ -22,6 +22,7 @@ const float MERGED_IMAGE_MAX_WIDTH = 800.0;
 
 
 - (UIImage *)cropFaceThumbnailsInUIImage:(UIImage *)uiImage {
+    [uiImage imageOrientation];
     NSData *imageData = UIImageJPEGRepresentation(uiImage, 1.0);
     return [self cropFaceThumbnailsInNSData:imageData];
 }
@@ -156,8 +157,6 @@ const float MERGED_IMAGE_MAX_WIDTH = 800.0;
 
 
 - (void)saveUIImageToAlbum:(UIImage *)image {
-//    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-//    return;
     CGImageRef cgImage = image.CGImage;
     BOOL releaseCGImage = NO;
     if (!cgImage) {

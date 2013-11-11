@@ -30,116 +30,91 @@ To customize your own recognition functions:
 
 ReKognition [Face Detect](http://rekognition.com/developer/docs#facedetect) Function (if not set, jobs is `face_aggressive` by default)
 ```objective-c
-+ (RKFaceDetectResults *)RKFaceDetect:(UIImage*)image
-                                 jobs:(NSString *)jobs;            // optional: "face_aggressive"
-+ (RKFaceDetectResults *)RKFaceDetectWithUrl:(NSURL *)imageUrl
-                                        jobs:(NSString *)jobs;     // optional: "face_aggressive"
+- (RKFaceDetectResults *)RKFaceDetect:(UIImage*)image
+                                 jobs:(FaceDetectJobs)jobs;
+- (RKFaceDetectResults *)RKFaceDetectWithUrl:(NSURL *)imageUrl
+                                        jobs:(FaceDetectJobs)jobs;
 ```
 
 ReKognition [Face Add](http://rekognition.com/developer/docs#faceadd) Function
 ```objective-c
-+ (RKFaceDetectResults *)RKFaceAdd:(UIImage*)image
-                         nameSpace:(NSString *)name_space          // optional
-                            userID:(NSString *)user_id             // optional
-                               tag:(NSString *)tag                 // optional
-                              jobs:(NSString *)jobs;               // optional: "face_add"
+- (RKFaceDetectResults *)RKFaceAdd:(UIImage*)image
+                    faceDetectJobs:(FaceDetectJobs)jobs
+                       assignedTag:(NSString *)tag;             // If nil, assigned to untagged group
 
-+ (RKFaceDetectResults *)RKFaceAddWithUrl:(NSURL *)imageUrl
-                                nameSpace:(NSString *)name_space  // optional
-                                   userID:(NSString *)user_id     // optional
-                                      tag:(NSString *)tag         // optional
-                                     jobs:(NSString *)jobs;       // optional: "face_add"
+- (RKFaceDetectResults *)RKFaceAddWithUrl:(NSURL *)imageUrl
+                           faceDetectJobs:(FaceDetectJobs)jobs
+                              assignedTag:(NSString *)tag;      // If nil, assigned to untagged group
 ```
 
 ReKognition [Face Train](http://rekognition.com/developer/docs#facetrain) Function
 ```objective-c
-+ (RKBaseResults *)RKFaceTrain:(NSString *)name_space        // optional
-                        userID:(NSString *)user_id           // optional
-                          tags:(NSArray *)tags;              // optional
+- (RKBaseResults *)RKFaceTrain:(NSArray *)selectedTags;         // If nil, train all tags
 ```
 
 ReKognition [Face Cluster](http://rekognition.com/developer/docs#facecluster) Function
 ```objective-c
-+ (RKFaceClusterResults *)RKFaceCluster:(NSString *)name_space      // optional
-                                 userId:(NSString *)user_id         // optional
-                         aggressiveness:(NSNumber *)aggressiveness; // optional: 40
+- (RKFaceClusterResults *)RKFaceCluster:(NSNumber *)aggressiveness;     // If nil, use 40
 ```
 
 ReKognition [Face Crawl](http://rekognition.com/developer/docs#facecrawl) Function
 ```objective-c
-+ (RKFaceCrawlResults *)RKFaceCrawl:(NSString *)fb_id
-                       access_token:(NSString *)access_token
-                        crawl_fb_id:(NSArray *)friends_ids
-                          nameSpace:(NSString *)name_space        // optional
-                             userID:(NSString *)user_id;          // optional
+- (RKFaceCrawlResults *)RKFaceCrawl:(NSString *)fb_id
+                        accessToken:(NSString *)access_token
+                          friendIds:(NSArray *)friends_ids;
 ```
 
 ReKognition [Face Recognize](http://rekognition.com/developer/docs#facerecognize) Function
 ```objective-c
-+ (RKFaceDetectResults *)RKFaceRecognize:(UIImage *)image
-                               nameSpace:(NSString *)name_space    // optional
-                                  userID:(NSString *)user_id       // optional
-                                    jobs:(NSString *)jobs          // optional: "face_recognize"
-                              num_return:(NSNumber *)num_return    // optional: 3
-                                    tags:(NSArray *)tags;          // optional
+- (RKFaceDetectResults *)RKFaceRecognize:(UIImage *)image
+                          faceDetectJobs:(FaceDetectJobs)jobs
+                              resultsNum:(NSNumber *)num_return         // If nil, return 3 results
+                               amongTags:(NSArray *)tags;               // If nil, recognize among all tags
 
-+ (RKFaceDetectResults *)RKFaceRecognizeWithUrl:(NSURL *)imageUrl
-                                      nameSpace:(NSString *)name_space     // optional
-                                         userID:(NSString *)user_id        // optional
-                                           jobs:(NSString *)jobs           // optional: "face_recognize"
-                                     num_return:(NSNumber *)num_return     // optional: 3
-                                           tags:(NSArray *)tags;           // optional
+- (RKFaceDetectResults *)RKFaceRecognizeWithUrl:(NSURL *)imageUrl
+                                 faceDetectJobs:(FaceDetectJobs)jobs
+                                     resultsNum:(NSNumber *)num_return  // If nil, returns 3 retuls
+                                      amongTags:(NSArray *)tags;        // If nil, recognize among all tags
 ```
 
 ReKognition [Face Visualize](http://rekognition.com/developer/docs#facevirtualize) Function
 ```objective-c
-+ (RKFaceVisualizeResults *)RKFaceVisualize:(NSArray *)tags                       // optional
-                                       jobs:(NSString *)jobs                      // optional: "face_visualize_show_default_tag"
-                                  nameSpace:(NSString *)name_space                // optional
-                                     userID:(NSString *)user_id                   // optional
-                             num_tag_return:(NSNumber *)num_tag_return            // optional
-                      num_img_return_pertag:(NSNumber *)num_img_return_pertag;    // optional
+- (RKFaceVisualizeResults *)RKFaceVisualize:(NSArray *)selectedTags             // If nil, return all tags
+                                 showImages:(BOOL)flag
+                               imagesPerTag:(NSNumber *)num_img_return_pertag;  // If nil, return all images
 ```
 
 ReKognition [Face Search](http://rekognition.com/developer/docs#facesearch) Function
 ```objective-c
-+ (RKFaceDetectResults *)RKFaceSearch:(UIImage *)image
-                                 jobs:(NSString *)jobs                 // optional: "face_search"
-                            nameSpace:(NSString *)name_space           // optional
-                               userID:(NSString *)user_id              // optional
-                           num_return:(NSNumber *)num_return           // optional
-                                 tags:(NSArray *)tags;                 // optional
+- (RKFaceDetectResults *)RKFaceSearch:(UIImage *)image
+                       faceDetectJobs:(FaceDetectJobs)jobs
+                           resultsNum:(NSNumber *)num_return        // If nil, return all results
+                            amongTags:(NSArray *)tags;              // If nil, search among all tags
 
-+ (RKFaceDetectResults *)RKFaceSearchWithUrl:(NSURL *)imageUrl
-                                        jobs:(NSString *)jobs          // optional: "face_search"
-                                   nameSpace:(NSString *)name_space    // optional
-                                      userID:(NSString *)user_id       // optional
-                                  num_return:(NSNumber *)num_return    // optional
-                                        tags:(NSArray *)tags;          // optional
+- (RKFaceDetectResults *)RKFaceSearchWithUrl:(NSURL *)imageUrl
+                              faceDetectJobs:(FaceDetectJobs)jobs
+                                  resultsNum:(NSNumber *)num_return // If nil, return all results
+                                   amongTags:(NSArray *)tags;       // If nil, search among all tags
 ```
 
 ReKognition [Face Delete](http://rekognition.com/developer/docs#facedelete) Function
 ```objective-c
-+ (RKBaseResults *)RKFaceDelete:(NSString *)tag                  // optional
-                     imageIndex:(NSArray *)img_index_array       // optional
-                      nameSpace:(NSString *)name_space           // optional
-                         userID:(NSString *)user_id;             // optional
+- (RKBaseResults *)RKFaceDelete:(NSString *)tag                     // If nil, entire user_id is removed
+                     imageIndex:(NSArray *)img_index_array;         // If nil, entire tag is removed
 ```
 
 ReKognition [Face Rename](http://rekognition.com/developer/docs#facerename) Function
 ```objective-c
-+ (RKBaseResults *)RKFaceRenameOrMergeTag:(NSString *)oldTag
+- (RKBaseResults *)RKFaceRenameOrMergeTag:(NSString *)oldTag
                                   withTag:(NSString *)newTag
-                            selectedFaces:(NSArray *)img_index_array     // optional
-                                nameSpace:(NSString *)name_space         // optional
-                                   userID:(NSString *)user_id;           // optional
+                        onlySelectedFaces:(NSArray *)img_index_array;    // If nil, rename all images under the tag
 ```
 
 ReKognition [Face Stats](http://rekognition.com/developer/docs#facestats) Function
 ```objective-c
-+ (RKNameSpaceStatsResults *)RKNameSpaceStats;
+- (RKNameSpaceStatsResults *)RKNameSpaceStats;
 
-+ (RKUserIdStatsResults *)RKUserIdStats:(NSString *)name_space;
+- (RKUserIdStatsResults *)RKUserIdStats;
 ```
 
 ReKognition [Scene Understadning](http://rekognition.com/developer/docs#scenecatagorize) Function

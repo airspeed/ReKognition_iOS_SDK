@@ -13,6 +13,8 @@
 #import <QuartzCore/QuartzCore.h>
 #import "FaceThumbnailCropper.h"
 #import "UIImageRotationFixer.h"
+#import "APIKey+Secret.h"
+
 @interface ViewController ()
 
 @end
@@ -140,11 +142,12 @@
                         FaceThumbnailCropper *cropper = [[FaceThumbnailCropper alloc] init];
                         UIImage *cropped = [cropper cropFaceThumbnailsInUIImage:imageView.image];
                         RKFaceDetectResults* detectResults;
+                        ReKognitionSDK *sdk = [[ReKognitionSDK alloc] initWithAPIKey:API_KEY APISecret:API_SECRET];
                         if (cropped) {
-                            detectResults = [ReKognitionSDK RKFaceDetect:cropped jobs:@"face_part_gender_emotion_race_age_glass_mouth_open_wide_eye_closed"];
+                            detectResults = [sdk RKFaceDetect:cropped jobs:FaceDetectAge|FaceDetectEyeClosed|FaceDetectPart|FaceDetectGender|FaceDetectGlass];
                             [cropper correctFaceDetectResult:detectResults];
                         } else {
-                            detectResults = [ReKognitionSDK RKFaceDetect:imageView.image jobs:@"face_part_gender_emotion_race_age_glass_mouth_open_wide_eye_closed"];
+                            detectResults = [sdk RKFaceDetect:imageView.image jobs:FaceDetectAge|FaceDetectEyeClosed|FaceDetectPart|FaceDetectGender|FaceDetectGlass];
                         }
                         
                         dispatch_sync(dispatch_get_main_queue(), ^{
@@ -307,7 +310,8 @@
                     
                     dispatch_queue_t queue = dispatch_get_global_queue(0,0);
                     dispatch_async(queue, ^{
-                        RKSceneUnderstandingResults *sceneResults = [ReKognitionSDK RKSceneUnderstanding:imageView.image];
+                        ReKognitionSDK *sdk = [[ReKognitionSDK alloc] initWithAPIKey:API_KEY APISecret:API_SECRET];
+                        RKSceneUnderstandingResults *sceneResults = [sdk RKSceneUnderstanding:imageView.image];
                         
                         dispatch_sync(dispatch_get_main_queue(), ^{
                             [activityIndicator stopAnimating];
