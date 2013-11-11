@@ -127,11 +127,11 @@ ReKognition [Scene Understadning](http://rekognition.com/developer/docs#scenecat
 ### Configuration:
 1. Click [here](http://v2.rekognition.com/user/create) to register a ReKognition account, and you will receive the API key and secret by email.
 
-2. Use your own API Key and Secret in [RekognitionSDK][3].
+2. Use your own API Key and Secret when initializing [RekognitionSDK][3].
 
 ```objective-c 
-static NSString *API_Key = @"YOUR_API_KEY";
-static NSString *API_Secret = @"YOUR_API_SECRET";
+- (id)initWithAPIKey:(NSString *)key APISecret:(NSString *)secret namespace:(NSString *)nameSpace userid:(NSString *)userid;
+- (id)initWithAPIKey:(NSString *)key APISecret:(NSString *)secret; // "default" will be used for namespace and userid.
 ```
 
 ### Demo: 
