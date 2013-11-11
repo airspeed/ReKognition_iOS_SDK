@@ -104,7 +104,6 @@ const float MERGED_IMAGE_MAX_WIDTH = 800.0;
         CIImage *ciThumbnail = [ciImage imageByCroppingToRect:ciRect];
         UIImage *thumbnail = [UIImage imageWithCIImage:ciThumbnail];
         [thumbnail drawInRect:formattedFaceRect];
-//        [self saveUIImageToAlbum:thumbnail];
     }
     UIImage *mergedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
