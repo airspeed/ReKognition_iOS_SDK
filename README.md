@@ -1,6 +1,7 @@
-# Current Version: 2.0
+### Updates V2.1:
+1. Fixed iOS 6.1 compatbility issue.
 
-### Updates:
+### Updates V2.0:
 
 1. Implemented [FaceThumbnailCropper][1] and [UIImageRotationFixer][2] that serve as helper classes for [ReKognitionSDK][3].
 
