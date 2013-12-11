@@ -87,7 +87,7 @@
 // ReKognition Face Detect Function
 - (RKFaceDetectResults *)RKFaceDetect:(UIImage *)image jobs:(FaceDetectJobs)jobs {
     NSData *imageData = UIImageJPEGRepresentation(image, 1.0f);
-    NSString *encodedString = [imageData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithCarriageReturn];
+    NSString *encodedString = (__IPHONE_7_0) ? [imageData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithCarriageReturn] : [imageData base64Encoding];
     encodedString = [encodedString stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"];
     
     NSString *jobsString = [self parseFaceDetectJobs:jobs];
@@ -114,7 +114,7 @@
 // ReKognition Face Add Function
 - (RKFaceDetectResults *)RKFaceAdd:(UIImage *)image faceDetectJobs:(FaceDetectJobs)jobs assignedTag:(NSString *)tag {
     NSData *imageData = UIImageJPEGRepresentation(image, 1.0f);
-    NSString *encodedString = [imageData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithCarriageReturn];
+    NSString *encodedString = (__IPHONE_7_0) ? [imageData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithCarriageReturn] : [imageData base64Encoding];
     encodedString = [encodedString stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"];
     
     NSString *jobsString = [self parseFaceDetectJobs:jobs];
@@ -218,7 +218,7 @@
 //ReKognition Face Recognize Function
 - (RKFaceDetectResults *)RKFaceRecognize:(UIImage *)image faceDetectJobs:(FaceDetectJobs)jobs resultsNum:(NSNumber *)num_return amongTags:(NSArray *)tags {
     NSData *imageData = UIImageJPEGRepresentation(image, 1.0f);
-    NSString *encodedString = [imageData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithCarriageReturn];
+    NSString *encodedString = (__IPHONE_7_0) ? [imageData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithCarriageReturn] : [imageData base64Encoding];
     encodedString = [encodedString stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"];
     
     NSString *jobsString = [self parseFaceDetectJobs:jobs];
@@ -295,7 +295,7 @@
 // ReKognition Face Search Function
 - (RKFaceDetectResults *)RKFaceSearch:(UIImage *)image faceDetectJobs:(FaceDetectJobs)jobs resultsNum:(NSNumber *)num_return amongTags:(NSArray *)tags {
     NSData *imageData = UIImageJPEGRepresentation(image, 1.0f);
-    NSString *encodedString = [imageData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithCarriageReturn];
+    NSString *encodedString = (__IPHONE_7_0) ? [imageData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithCarriageReturn] : [imageData base64Encoding];
     encodedString = [encodedString stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"];
     
     NSString *jobsString = [self parseFaceDetectJobs:jobs];
@@ -411,7 +411,7 @@
 // ReKognition Scene Understanding Function
 - (RKSceneUnderstandingResults *)RKSceneUnderstanding:(UIImage *)image {
     NSData *imageData = UIImageJPEGRepresentation(image, 1.0f);
-    NSString *encodedString = [imageData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithCarriageReturn];
+    NSString *encodedString = (__IPHONE_7_0) ? [imageData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithCarriageReturn] : [imageData base64Encoding];
     encodedString = [encodedString stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"];
     NSDictionary * jobDictionary = @{@"api_key": self.apiKey,
                                      @"api_secret": self.apiSecret,

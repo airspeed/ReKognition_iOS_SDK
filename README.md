@@ -10,11 +10,11 @@
 
 2. [ReKognitionResults][4] provides data classes and parsing methods for ReKognition API response.
 
-[1]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/Rekognition_iOS_SDK/SDK/FaceThumbnailCropper.h
-[2]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/Rekognition_iOS_SDK/SDK/UIImageRotationFixer.h
-[3]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/Rekognition_iOS_SDK/SDK/ReKognitionSDK.h
-[4]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/Rekognition_iOS_SDK/SDK/ReKognitionResults.h
-
+[1]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/SDK/FaceThumbnailCropper.h
+[2]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/SDK/UIImageRotationFixer.h
+[3]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/SDK/ReKognitionSDK.h
+[4]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/SDK/ReKognitionResults.h
+[5]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/ReKognition%20Demo/APIKey%2BSecret.h
 -----------------------------
 This ReKognition iOS SDK is intent for developers who want to integrate ReKognition API into their 
 iOS applications. The folder contains our ReKognition iOS SDKs (ReKognitionSDK.h and ReKognitionSDK.m under folder named SDK) and 
@@ -128,6 +128,8 @@ ReKognition [Scene Understadning](http://rekognition.com/developer/docs#scenecat
 1. Click [here](http://v2.rekognition.com/user/create) to register a ReKognition account, and you will receive the API key and secret by email.
 
 2. Use your own API Key and Secret when initializing [RekognitionSDK][3].
+
+3. To run the demo, input your own API Key and Secret in [APIKey+Secret.h][5].
 
 ```objective-c 
 - (id)initWithAPIKey:(NSString *)key APISecret:(NSString *)secret namespace:(NSString *)nameSpace userid:(NSString *)userid;
