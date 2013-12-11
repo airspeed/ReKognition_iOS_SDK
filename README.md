@@ -128,13 +128,11 @@ ReKognition [Scene Understadning](http://rekognition.com/developer/docs#scenecat
 1. Click [here](http://v2.rekognition.com/user/create) to register a ReKognition account, and you will receive the API key and secret by email.
 
 2. Use your own API Key and Secret when initializing [RekognitionSDK][3].
-
-3. To run the demo, input your own API Key and Secret in [APIKey+Secret.h][5].
-
 ```objective-c 
 - (id)initWithAPIKey:(NSString *)key APISecret:(NSString *)secret namespace:(NSString *)nameSpace userid:(NSString *)userid;
 - (id)initWithAPIKey:(NSString *)key APISecret:(NSString *)secret; // "default" will be used for namespace and userid.
 ```
+3. To run the demo, input your own API Key and Secret in [APIKey+Secret.h][5].
 
 ### Demo: 
 This demo app allows you to perform the following tasks:
