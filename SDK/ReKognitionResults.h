@@ -25,8 +25,6 @@ typedef struct RKPose RKPose;
 @property (nonatomic) CGPoint mouth_l;
 @property (nonatomic) CGPoint mouth_r;
 @property (nonatomic) RKPose pose;
-@property (strong, nonatomic) NSArray * matched_emotions;
-@property (strong, nonatomic) NSArray * matched_emotion_scores;
 @property (strong, nonatomic) NSArray * matched_races;
 @property (strong, nonatomic) NSArray * matched_race_scores;
 @property (nonatomic) CGFloat smile;

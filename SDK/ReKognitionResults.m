@@ -100,19 +100,6 @@
         result.matched_races = races;
         result.matched_race_scores = raceScores;
     }
-    
-    // TODO: check ordering.
-    if (item[@"emotion"]) {
-        NSDictionary *emotionList = item[@"emotion"];
-        NSMutableArray *emotions = [NSMutableArray arrayWithCapacity:[emotionList count]];
-        NSMutableArray *emotionScores = [NSMutableArray arrayWithCapacity:[emotionList count]];
-        for (NSString *emotion in [emotionList allKeys]) {
-            [emotions addObject:emotion];
-            [emotionScores addObject:emotionList[emotion]];
-        }
-        result.matched_emotions = emotions;
-        result.matched_emotion_scores = emotionScores;
-    }
 }
 
 

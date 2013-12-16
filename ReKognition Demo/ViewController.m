@@ -12,7 +12,7 @@
 #import "ReKognitionResults.h"
 #import <QuartzCore/QuartzCore.h>
 #import "FaceThumbnailCropper.h"
-#import "UIImageRotationFixer.h"
+#import "RekoImageToolbox.h"
 #import "APIKey+Secret.h"
 
 @interface ViewController ()
@@ -349,7 +349,7 @@
 {
     
     UIImage *rawImage = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
-    imageView.image = [UIImageRotationFixer fixOrientation:rawImage];
+    imageView.image = [RekoImageToolbox fixOrientation:rawImage];
     NSLog(@"%d", imageView.image.imageOrientation);
     NSLog(@"%f %f", imageView.image.size.width, imageView.image.size.height);
     

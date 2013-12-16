@@ -15,13 +15,12 @@ typedef NS_OPTIONS(NSUInteger, FaceDetectJobs) {
     FaceDetectPart = 1UL << 2,
     FaceDetectPartDetail = 1UL << 3,
     FaceDetectGender = 1UL << 4,
-    FaceDetectEmotion = 1UL << 5,
-    FaceDetectRace = 1UL << 6,
-    FaceDetectAge = 1UL << 7,
-    FaceDetectGlass = 1UL << 8,
-    FaceDetectMouthOpen = 1UL << 9,
-    FaceDetectEyeClosed = 1UL << 10,
-    FaceDetectSmile = 1UL << 11
+    FaceDetectRace = 1UL << 5,
+    FaceDetectAge = 1UL << 6,
+    FaceDetectGlass = 1UL << 7,
+    FaceDetectMouthOpen = 1UL << 8,
+    FaceDetectEyeClosed = 1UL << 9,
+    FaceDetectSmile = 1UL << 10
 };
 
 

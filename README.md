@@ -1,18 +1,20 @@
 ### Updates V2.1:
 1. Fixed iOS 6.1 compatbility issue.
 
+2. Updated UIImageRotationFixer to [RekoImageToolbox][2].
+
 ### Updates V2.0:
 
-1. Implemented [FaceThumbnailCropper][1] and [UIImageRotationFixer][2] that serve as helper classes for [ReKognitionSDK][3].
+1. Implemented [FaceThumbnailCropper][1] and UIImageRotationFixer that serve as helper classes for [ReKognitionSDK][3].
 
    [FaceThumbnailCropper][1] crops face thumbnails out of the raw image, merges thumbnails into a single compressed image, and serves that image as the source for ReKognition API.
 
-   [UIImageRotationFixer][2] rotates the underlining CGImageRef of an UIImage to its up un-mirrored position. It is used to correct the source images whose orientation is other than upwards, like images taken from camera roll.
+   UIImageRotationFixer rotates the underlining CGImageRef of an UIImage to its up un-mirrored position. It is used to correct the source images whose orientation is other than upwards, like images taken from camera roll.
 
 2. [ReKognitionResults][4] provides data classes and parsing methods for ReKognition API response.
 
 [1]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/SDK/FaceThumbnailCropper.h
-[2]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/SDK/UIImageRotationFixer.h
+[2]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/SDK/RekoImageToolbox.h
 [3]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/SDK/ReKognitionSDK.h
 [4]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/SDK/ReKognitionResults.h
 [5]: https://github.com/orbeus/ReKognition_iOS_SDK/blob/master/ReKognition%20Demo/APIKey%2BSecret.h

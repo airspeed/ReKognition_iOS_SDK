@@ -74,7 +74,6 @@
     if (jobs & FaceDetectPart) [builder appendString:@"_part"];
     if (jobs & FaceDetectPartDetail) [builder appendString:@"_part_detail"];
     if (jobs & FaceDetectGender) [builder appendString:@"_gender"];
-    if (jobs & FaceDetectEmotion) [builder appendString:@"_emotion"];
     if (jobs & FaceDetectRace) [builder appendString:@"_race"];
     if (jobs & FaceDetectAge) [builder appendString:@"_age"];
     if (jobs & FaceDetectGlass) [builder appendString:@"_glass"];
@@ -102,6 +101,9 @@
                                       @"jobs": [@"face" stringByAppendingString:jobsString],
                                       @"base64": encodedString};
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseFaceDetectResponse:data];
 }
 
@@ -113,6 +115,10 @@
                                       @"jobs": [@"face" stringByAppendingString:jobsString],
                                       @"urls": [imageUrl absoluteString]};
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    // TODO: throw exception instead.
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseFaceDetectResponse:data];
 }
 
@@ -138,6 +144,9 @@
         [jobsDictionary setObject:tag forKey:@"tag"];
     }
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseFaceAddResponse:data];
 }
 
@@ -157,6 +166,9 @@
         [jobsDictionary setObject:tag forKey:@"tag"];
     }
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseFaceAddResponse:data];
 }
 
@@ -178,6 +190,9 @@
         [jobsDictionary setObject:self.userid forKey:@"user_id"];
     }
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseFaceTrainResponse:data];
 }
 
@@ -197,6 +212,9 @@
         [jobsDictionary setObject:aggressiveness forKey:@"aggressiveness"];
     }
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseFaceClusterResponse:data];
 }
 
@@ -217,6 +235,9 @@
         [jobsDictionary setObject:self.userid forKey:@"user_id"];
     }
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseFaceCrawlResponse:data];
 }
 
@@ -245,6 +266,9 @@
         [jobsDictionary setObject:[tags componentsJoinedByString:@";"] forKey:@"tags"];
     }
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseFaceRecognizeResponse:data];
 }
 
@@ -267,6 +291,9 @@
         [jobsDictionary setObject:[tags componentsJoinedByString:@";"] forKey:@"tags"];
     }
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseFaceRecognizeResponse:data];
 }
 
@@ -294,6 +321,9 @@
         [jobsDictionary setObject:num_img_return_pertag forKey:@"num_img_return_pertag"];
     }
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseFaceVisualizeResponse:data];
 }
 
@@ -322,6 +352,9 @@
         [jobsDictionary setObject:num_return forKey:@"num_return"];
     }
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseFaceSearchResponse:data];
 }
 
@@ -344,6 +377,9 @@
         [jobsDictionary setObject:num_return forKey:@"num_return"];
     }
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseFaceSearchResponse:data];
 }
 
@@ -368,6 +404,9 @@
         [jobsDictionary setObject:[img_index_array componentsJoinedByString:@";"] forKey:@"img_index"];
     }
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseFaceDeleteResponse:data];
 }
 
@@ -389,6 +428,9 @@
         [jobsDictionary setObject:self.userid forKey:@"user_id"];
     }
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseFaceRenameResponse:data];
 }
 
@@ -399,6 +441,9 @@
                                      @"api_secret": self.apiSecret,
                                      @"jobs": @"face_name_space_stats"};
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseNameSpaceStatsResponse:data];
 }
 
@@ -410,6 +455,9 @@
         [jobsDictionary setObject:self.namespace forKey:@"name_space"];
     }
     NSData *data = [self postReKognitionJobs:jobsDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseUserIdStatsResponse:data];
 }
 
@@ -424,6 +472,9 @@
                                      @"jobs": @"scene",
                                      @"base64": encodedString};
     NSData *data = [self postReKognitionJobs:jobDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseSceneUnderstandingResponse:data];
 }
 
@@ -433,6 +484,9 @@
                                      @"jobs": @"scene",
                                      @"urls": imageUrl};
     NSData *data = [self postReKognitionJobs:jobDictionary];
+    if (!data) {
+        return nil;
+    }
     return [ReKognitionResponseParser parseSceneUnderstandingResponse:data];
 }
 

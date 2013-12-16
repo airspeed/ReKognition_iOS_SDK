@@ -11,13 +11,13 @@
 		08831461182DD2490010002C /* FaceThumbnailCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0883145A182DD2490010002C /* FaceThumbnailCropper.m */; };
 		08831462182DD2490010002C /* ReKognitionResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 0883145C182DD2490010002C /* ReKognitionResults.m */; };
 		08831463182DD2490010002C /* RekognitionSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 0883145E182DD2490010002C /* RekognitionSDK.m */; };
-		08831464182DD2490010002C /* UIImageRotationFixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08831460182DD2490010002C /* UIImageRotationFixer.m */; };
 		08A4ED311813D3EC003F6F66 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A4ED301813D3EC003F6F66 /* CoreImage.framework */; };
 		08A4ED331813D407003F6F66 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A4ED321813D407003F6F66 /* AssetsLibrary.framework */; };
 		08CC2A26182DD5760026819F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC2A23182DD5760026819F /* AppDelegate.m */; };
 		08CC2A27182DD5760026819F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC2A25182DD5760026819F /* ViewController.m */; };
 		08CC2A29182DD5890026819F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC2A28182DD5890026819F /* main.m */; };
 		08CC2A2B182DD70C0026819F /* empty_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 08CC2A2A182DD70C0026819F /* empty_pic.png */; };
+		08F2E6BA185E9C2A00BE96A0 /* RekoImageToolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F2E6B9185E9C2A00BE96A0 /* RekoImageToolbox.m */; };
 		A503FC8A17A06013002C6221 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A503FC8717A06013002C6221 /* icon.png */; };
 		A503FC8B17A06013002C6221 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A503FC8817A06013002C6221 /* icon@2x.png */; };
 		A5484A74179FBD1B0056E2E1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5484A73179FBD1B0056E2E1 /* QuartzCore.framework */; };
@@ -40,8 +40,6 @@
 		0883145C182DD2490010002C /* ReKognitionResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReKognitionResults.m; sourceTree = "<group>"; };
 		0883145D182DD2490010002C /* ReKognitionSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReKognitionSDK.h; sourceTree = "<group>"; };
 		0883145E182DD2490010002C /* RekognitionSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RekognitionSDK.m; sourceTree = "<group>"; };
-		0883145F182DD2490010002C /* UIImageRotationFixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageRotationFixer.h; sourceTree = "<group>"; };
-		08831460182DD2490010002C /* UIImageRotationFixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageRotationFixer.m; sourceTree = "<group>"; };
 		08A4ED301813D3EC003F6F66 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		08A4ED321813D407003F6F66 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		08CC2A22182DD5760026819F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		08CC2A28182DD5890026819F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		08CC2A2A182DD70C0026819F /* empty_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_pic.png; sourceTree = "<group>"; };
 		08E11C851830515D00D7F401 /* APIKey+Secret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "APIKey+Secret.h"; sourceTree = "<group>"; };
+		08F2E6B8185E9C2A00BE96A0 /* RekoImageToolbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RekoImageToolbox.h; sourceTree = "<group>"; };
+		08F2E6B9185E9C2A00BE96A0 /* RekoImageToolbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RekoImageToolbox.m; sourceTree = "<group>"; };
 		A503FC8717A06013002C6221 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		A503FC8817A06013002C6221 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		A5484A73179FBD1B0056E2E1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -89,14 +89,14 @@
 		08831458182DD2490010002C /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				08F2E6B8185E9C2A00BE96A0 /* RekoImageToolbox.h */,
+				08F2E6B9185E9C2A00BE96A0 /* RekoImageToolbox.m */,
 				08831459182DD2490010002C /* FaceThumbnailCropper.h */,
 				0883145A182DD2490010002C /* FaceThumbnailCropper.m */,
 				0883145B182DD2490010002C /* ReKognitionResults.h */,
 				0883145C182DD2490010002C /* ReKognitionResults.m */,
 				0883145D182DD2490010002C /* ReKognitionSDK.h */,
 				0883145E182DD2490010002C /* RekognitionSDK.m */,
-				0883145F182DD2490010002C /* UIImageRotationFixer.h */,
-				08831460182DD2490010002C /* UIImageRotationFixer.m */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -238,10 +238,10 @@
 				08CC2A27182DD5760026819F /* ViewController.m in Sources */,
 				08831462182DD2490010002C /* ReKognitionResults.m in Sources */,
 				08CC2A26182DD5760026819F /* AppDelegate.m in Sources */,
+				08F2E6BA185E9C2A00BE96A0 /* RekoImageToolbox.m in Sources */,
 				08831463182DD2490010002C /* RekognitionSDK.m in Sources */,
 				08831461182DD2490010002C /* FaceThumbnailCropper.m in Sources */,
 				08CC2A29182DD5890026819F /* main.m in Sources */,
-				08831464182DD2490010002C /* UIImageRotationFixer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
