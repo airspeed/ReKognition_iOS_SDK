@@ -108,7 +108,7 @@ double degreesToRadians(double degrees) { return degrees * M_PI / 180; }
 
 + (UIImage *)resizeImage:(UIImage *)image newSize:(CGSize)size {
     UIGraphicsBeginImageContext(size);
-    [image drawAtPoint:CGPointZero];
+    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return newImage;
