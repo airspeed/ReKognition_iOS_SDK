@@ -8,4 +8,3 @@
 
 #define API_KEY @"YOUR_API_KEY"
 #define API_SECRET @"YOUR_API_SECRET"
-

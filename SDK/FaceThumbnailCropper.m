@@ -25,7 +25,6 @@ const float MERGED_IMAGE_MAX_WIDTH = 800.0;
 
 
 - (UIImage *)cropFaceThumbnailsInUIImage:(UIImage *)uiImage {
-    [uiImage imageOrientation];
     NSData *imageData = UIImageJPEGRepresentation(uiImage, 1.0);
     return [self cropFaceThumbnailsInNSData:imageData];
 }
@@ -88,6 +87,7 @@ const float MERGED_IMAGE_MAX_WIDTH = 800.0;
             mergedImageWidth = MAX(mergedImageWidth, curX);
             curX = 0;
             curY += curRowHeight;
+            curRowHeight = 0;
         }
         CGRect formattedFaceRect = CGRectMake(curX, curY, formattedFaceSize.width, formattedFaceSize.height);
         NSLog(@"formatted: %f, %f, %f, %f", formattedFaceRect.origin.x, formattedFaceRect.origin.y, formattedFaceRect.size.width, formattedFaceRect.size.height);

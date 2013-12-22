@@ -350,6 +350,7 @@
     
     UIImage *rawImage = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
     imageView.image = [RekoImageToolbox fixOrientation:rawImage];
+//    imageView.image = rawImage;
     NSLog(@"%d", imageView.image.imageOrientation);
     NSLog(@"%f %f", imageView.image.size.width, imageView.image.size.height);
     
