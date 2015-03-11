@@ -61,7 +61,7 @@
     NSHTTPURLResponse *responseCode;
     NSData *oResponseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&responseCode error:&error];
     if([responseCode statusCode] != 200 || error){
-        NSLog(@"Error getting response: HTTP status code: %i, Error: %@", [responseCode statusCode], [error localizedDescription]);
+        NSLog(@"Error getting response: HTTP status code: %li, Error: %@", (long)[responseCode statusCode], [error localizedDescription]);
         return nil;
     }
     return oResponseData;

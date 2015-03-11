@@ -17,7 +17,7 @@ double degreesToRadians(double degrees) { return degrees * M_PI / 180; }
     // No-op if the orientation is already correct
     if (rawImage.imageOrientation == UIImageOrientationUp) return rawImage;
     
-    NSLog(@"original orientation: %d", rawImage.imageOrientation);
+    NSLog(@"original orientation: %d", (int)rawImage.imageOrientation);
     
     // We need to calculate the proper transformation to make the image upright.
     // We do it in 2 steps: Rotate if Left/Right/Down, and then flip if Mirrored.

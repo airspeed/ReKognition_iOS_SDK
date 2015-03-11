@@ -10,29 +10,29 @@
 	<string>ReKognition Demo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4145AC9D-BDA8-43CD-A871-F60D8843AADA</key>
-		<string>https://github.com/orbeus/ReKognition_iOS_SDK.git</string>
+		<key>53DDAEA5B2DE95B0638E39DD6C8824A51ABF3911</key>
+		<string>github.com:orbeus/ReKognition_iOS_SDK.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ReKognition Demo.xcodeproj/project.xcworkspace</string>
+	<string>ReKognition Demo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4145AC9D-BDA8-43CD-A871-F60D8843AADA</key>
+		<key>53DDAEA5B2DE95B0638E39DD6C8824A51ABF3911</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/orbeus/ReKognition_iOS_SDK.git</string>
+	<string>github.com:orbeus/ReKognition_iOS_SDK.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4145AC9D-BDA8-43CD-A871-F60D8843AADA</string>
+	<string>53DDAEA5B2DE95B0638E39DD6C8824A51ABF3911</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4145AC9D-BDA8-43CD-A871-F60D8843AADA</string>
+			<string>53DDAEA5B2DE95B0638E39DD6C8824A51ABF3911</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ReKognition_iOS_SDK</string>
 		</dict>
