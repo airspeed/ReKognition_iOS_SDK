@@ -1,0 +1,30 @@
+{
+  "name": "ReKognition_iOS_SDK",
+  "version": "0.0.1",
+  "summary": "ReKognition iOS SDK as pod. See https://github.com/orbeus/ReKognition_iOS_SDK for reference.",
+  "description": "                   A longer description of ReKognition_iOS_SDK in Markdown format.\n\n                   * Think: Why did you write this? What is the focus? What does it do?\n                   * CocoaPods will be using this to generate tags, and improve search results.\n                   * Try to keep it short, snappy and to the point.\n                   * Finally, don't worry about the indent, CocoaPods strips it!\n",
+  "homepage": "https://github.com/airspeed/ReKognition_iOS_SDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "airspeed": "franz.pugl@gmx.de"
+  },
+  "source": {
+    "git": "https://github.com/airspeed/ReKognition_iOS_SDK.git",
+    "commit": "41da127cbefa5fdb870b67131e0beb62075f700d",
+    "tag": "v0.0.1"
+  },
+  "source_files": [
+    "SDK",
+    "SDK/**/*.{h,m}",
+    "Frameworks",
+    "Frameworks/**/*.{h,m}"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "frameworks": [
+    "ImageIO",
+    "AssetsLibrary"
+  ]
+}
