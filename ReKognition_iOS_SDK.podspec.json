@@ -11,20 +11,24 @@
   "authors": {
     "airspeed": "franz.pugl@gmx.de"
   },
+  "platforms": {
+    "ios": null
+  },
   "source": {
     "git": "https://github.com/airspeed/ReKognition_iOS_SDK.git",
-    "commit": "41da127cbefa5fdb870b67131e0beb62075f700d",
-    "tag": "v0.0.1"
+    "tag": "0.0.1"
   },
   "source_files": [
     "SDK",
-    "SDK/**/*.{h,m}",
-    "Frameworks",
-    "Frameworks/**/*.{h,m}"
+    "SDK/**/*.{h,m}"
   ],
-  "exclude_files": "Classes/Exclude",
   "frameworks": [
     "ImageIO",
-    "AssetsLibrary"
+    "AssetsLibrary",
+    "Foundation",
+    "UIKit",
+    "CoreImage",
+    "CoreGraphics",
+    "QuartzCore"
   ]
 }
