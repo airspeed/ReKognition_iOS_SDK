@@ -1,6 +1,6 @@
 {
   "name": "ReKognition_iOS_SDK",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "ReKognition iOS SDK as pod. See https://github.com/orbeus/ReKognition_iOS_SDK for reference.",
   "description": "                   A longer description of ReKognition_iOS_SDK in Markdown format.\n\n                   * Think: Why did you write this? What is the focus? What does it do?\n                   * CocoaPods will be using this to generate tags, and improve search results.\n                   * Try to keep it short, snappy and to the point.\n                   * Finally, don't worry about the indent, CocoaPods strips it!\n",
   "homepage": "https://github.com/airspeed/ReKognition_iOS_SDK",
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/airspeed/ReKognition_iOS_SDK.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "source_files": [
     "SDK",
